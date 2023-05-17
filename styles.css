@@ -1,0 +1,22 @@
+body {
+  background-color: gainsboro;
+  margin: 0 10%;
+}
+
+.grid {
+  display: grid;
+  grid-template-areas: "s1  s1  s2  s3  s6" "s1  s1  s2  s3  s7" "s1  s1  s4  s5  s8" "s1  s1  s4  s5  s9";
+  height: 50%;
+  width: 80%;
+}
+
+.story {
+  padding: 10px;
+  margin: 10px;
+  align-content: center;
+  background-color: white;
+}
+
+.story img {
+  width: 100%;
+}
