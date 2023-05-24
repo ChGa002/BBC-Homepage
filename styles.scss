@@ -3,37 +3,48 @@ a {
     color: unset;
 }
 
-
 body {
-    background-color: gainsboro;
+    background-color: #F6F6F6;
     margin: 0;
     font-family: ReithSans, Helvetica, Arial, freesans, sans-serif;
 }
 
+header::after {
+    content: " ";
+    border-bottom: rgba(0, 0, 0, 0.2) solid 0.1px;
+    width:100%;
+    position: absolute;
+    bottom: 53%;
+    left: 0%;
+ }
+
 header {
     background-color: white;
-    padding: 10px 0;
+    padding: 10px 0 5px;
     font-size: 14px;
+    position: relative;
 
     nav {
         display: flex;
         justify-content: space-between;
-        margin: 0 10%;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 25px;
+        position: relative;
         
-
         div {
             display: flex;
             align-items: center;
         }
 
-        div:first-of-type {
+        .logo-section {
             margin-right: 30px;
             a:first-child{
                 margin-left: 0;
             }
         }
 
-        div:nth-of-type(2){
+        .menu-section{
             a {
                 padding: 0 10px;
             }
@@ -45,25 +56,23 @@ header {
         }
     }
 
-    h1 {
-        margin: 0 10%;
+    .title {
+        width: 80%;
+        margin: auto;
+    }
+
+
+    .logo {
+        width: 120px;
+        margin-left: 0;
+    }
+    
+    .searchbox {
+        background-color:#EBEBEB;
+        padding: 10px 100px 10px 15px;
     }
 }
 
-hr {
-    color: rgba(0, 0, 0, 0.2);
-    border-top-width: 0.1px;
-}
-
-.logo {
-    width: 120px;
-    margin-left: 0;
-}
-
-.searchbox {
-    background-color:#EBEBEB;
-    padding: 10px 100px 10px 15px;
-}
 .grid {
     display: grid;
     grid-template-areas:
@@ -73,7 +82,7 @@ hr {
         's1  s1  s4  s5  s9';
     height: 50%;
     width: 80%;
-    margin: 0 10%;
+    margin: auto;
 
     :first-child{
         margin-left: 0;
