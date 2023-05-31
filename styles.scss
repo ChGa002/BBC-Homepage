@@ -81,14 +81,12 @@ header {
         's1  s1  s4  s5  s8'
         's1  s1  s4  s5  s9';
     height: 50%;
-    width: 80%;
-    margin: auto;
 
     :first-child{
         margin-left: 0;
     }
 
-    :last-child{
+    :nth-last-child(-n+4){
         margin-right: 0;
     }
 }
@@ -98,8 +96,33 @@ header {
     margin: 10px;
     align-content: center;
     background-color: white;
+    overflow: hidden;
 }
 
 .story img {
     width: 100%;
+}
+
+.story h2 {
+    // white-space: nowrap;
+    overflow: hidden;
+    // text-overflow: ellipsis;
+    display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+}
+
+.story p {
+    // white-space: nowrap;
+    overflow: hidden;
+    // text-overflow: ellipsis;
+    display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;  
+
+}
+
+.content{
+    width: 80%;
+    margin: auto;
 }
