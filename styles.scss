@@ -97,32 +97,40 @@ header {
     align-content: center;
     background-color: white;
     overflow: hidden;
+
+    img {
+        width: 100%;
+    }
+
+    h2 {
+        // white-space: nowrap;
+        overflow: hidden;
+        // text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;  
+    }
+
+    p {
+        // white-space: nowrap;
+        overflow: hidden;
+        // text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;  
+    
+    }
 }
 
-.story img {
-    width: 100%;
-}
-
-.story h2 {
-    // white-space: nowrap;
-    overflow: hidden;
-    // text-overflow: ellipsis;
-    display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;  
-}
-
-.story p {
-    // white-space: nowrap;
-    overflow: hidden;
-    // text-overflow: ellipsis;
-    display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;  
-
+.story:hover {
+    h2 {
+        color: rgb(80, 80, 235);
+        text-decoration: underline;
+    }
 }
 
 .content{
     width: 80%;
     margin: auto;
+    max-width: 1920px; 
 }
